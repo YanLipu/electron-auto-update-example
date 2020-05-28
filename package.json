@@ -2,8 +2,14 @@
   "name": "electron-auto-update-example",
   "version": "1.0.0",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YanLipu/electron-auto-update-example.git"
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
   "author": "",
   "license": "ISC",
@@ -13,16 +19,5 @@
   },
   "dependencies": {
     "electron-updater": "^4.3.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/YanLipu/electron-auto-update-example.git"
-  },
-  "build": "electron-builder build --win --publish never",
-  "deploy": "electron-builder build --win --publish always",
-  "bugs": {
-    "url": "https://github.com/YanLipu/electron-auto-update-example/issues"
-  },
-  "homepage": "https://github.com/YanLipu/electron-auto-update-example#readme",
-  "description": ""
+  }    
 }
